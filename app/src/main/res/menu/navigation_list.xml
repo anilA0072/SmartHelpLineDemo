@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:visible="true" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_hospitals"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Hospitals" />
+        <item
+            android:id="@+id/nav_clinics"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Clinics" />
+        <item
+            android:id="@+id/nav_Doctors"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Doctors" />
+
+        <item
+            android:id="@+id/nav_specialization"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Specialization" />
+    </group>
+
+    <item android:title="Utilities">
+        <menu>
+            <item
+                android:id="@+id/nav_medicineTracker"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Medicine Tracker" />
+            <item
+                android:id="@+id/nav_bmiCalculator"
+                android:icon="@drawable/ic_menu_send"
+                android:title="BMI Calculator" />
+        </menu>
+    </item>
+
+    <item android:title="Emergency Contacts">
+        <menu>
+            <item
+                android:id="@+id/nav_ambulance"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Ambulance" />
+        </menu>
+    </item>
+
+
+        <item android:title="">
+            <menu>
+                <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Feedback" />
+        <item
+            android:id="@+id/nav_Settings"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_aboutUs"
+            android:icon="@drawable/ic_menu_send"
+            android:title="About Us" />
+            </menu>
+    </item>
+</menu>

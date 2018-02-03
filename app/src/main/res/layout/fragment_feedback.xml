@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/feedback"
+    android:background="@color/white"
+    tools:context="com.example.anil.smarthelpline.Navigation_Elements.feedback_Fragment">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="Name"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:id="@+id/name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_below="@+id/name"
+        android:hint="Email Id"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:id="@+id/sendTo"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="Subject of mail"
+        android:layout_below="@+id/sendTo"
+        android:layout_alignParentBottom="@+id/sendTo"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:id="@+id/subject"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:hint="Write your message..."
+        android:layout_below="@+id/subject"
+        android:layout_alignParentBottom="@+id/subject"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:id="@+id/emailText"/>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:text="Send Feedback"
+    android:id="@+id/sendFeedback"/>
+
+</RelativeLayout>

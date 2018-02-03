@@ -1,0 +1,80 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bmiCalculator"
+    android:background="@color/white"
+    tools:context="com.example.anil.smarthelpline.Navigation_Elements.bmi_Calculator_Fragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textHight"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:text="Height "
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textHight"
+        android:inputType="number|numberDecimal"
+        android:id="@+id/height"
+        android:hint="Enter height in meters ....."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textWeight"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:text="Weight "
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_below="@+id/height"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textWeight"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:inputType="number|numberDecimal"
+        android:id="@+id/weight"
+        android:hint="Enter weight in kilograms....."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weight"
+        android:text="Select YOUR Gender...."
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:id="@+id/gender"
+        android:layout_marginTop="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender"
+        android:id="@+id/manwoman">
+
+        <ImageButton android:id="@+id/man"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:scaleType="fitStart"
+            android:layout_weight="2"
+            android:src="@drawable/man" />
+
+        <ImageButton android:src="@drawable/woman"
+            android:layout_height="100dp"
+            android:layout_width="200dp"
+            android:scaleType="fitStart"
+            android:layout_weight="1"
+            android:id="@+id/woman"></ImageButton>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/result"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/manwoman"/>
+</RelativeLayout>
